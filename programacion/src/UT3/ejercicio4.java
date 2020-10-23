@@ -29,6 +29,7 @@ public class ejercicio4 {
 		}else {
 			System.out.println("Tu importe es " +importe);
 		}
+	sc.close();
 	}
 
 }
