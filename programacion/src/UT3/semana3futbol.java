@@ -38,9 +38,7 @@ public class semana3futbol {
 			}else {
 				System.out.println("No");
 			}
-			
 			}
-			
 		}
 		entrada.close();
 	}
