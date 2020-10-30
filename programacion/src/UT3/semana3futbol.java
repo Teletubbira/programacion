@@ -7,13 +7,13 @@ import java.util.Scanner;
 
 /**
  * @author Irasema
- *
+ * comentario para el nuevo branch
  */
 public class semana3futbol {
 
 	/**
 	 * @param args
-	 */
+	 */ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner entrada= new Scanner(System.in);
@@ -27,7 +27,7 @@ public class semana3futbol {
 		int campo;
 		while (superficie != 0) {
 			
-		System.out.println("Introduzca la superficie en metros cuadrados: ");
+		System.out.println("Introduzca la superficie en metros cuadrados por favor: ");
 		superficie = entrada.nextInt();
 		if(superficie!=0) {
 			
