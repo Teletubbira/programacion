@@ -25,21 +25,23 @@ public class semana3futbol {
 		int maximoSuperficie = maximoLargo * maximoAncho;
 		int superficie = 1; //distinto de 0 para entrar en while
 		int campo;
+		
+		
 		while (superficie != 0) {
 			
-		System.out.println("Introduzca la superficie en metros cuadrados: ");
-		superficie = entrada.nextInt();
-		if(superficie!=0) {
-			
-			System.out.println("Introduzca los campos de futbol estimados: ");
-			campo = entrada.nextInt();
-			if (superficie >= minimoSuperficie*campo && superficie <= maximoSuperficie*campo) {
-				System.out.println("Si");
-			}else {
-				System.out.println("No");
-			}
-			
-			}
+			System.out.println("Introduzca la superficie en metros cuadrados: ");
+			superficie = entrada.nextInt();
+			if(superficie != 0) {
+				
+				System.out.println("Introduzca los campos de futbol estimados: ");
+				campo = entrada.nextInt();
+				if (superficie >= minimoSuperficie*campo && superficie <= maximoSuperficie*campo) {
+					System.out.println("Si");
+				}else {
+					System.out.println("No");
+				}
+				
+				}
 			
 		}
 		entrada.close();
