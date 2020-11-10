@@ -20,12 +20,12 @@ public class ejercicio19 {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Introduce numeros hasta llegar a 0: ");
 		int numero = 1;
-		int aux = 0;
+		int suma = 0;
 		while (numero != 0) {
 			numero = sc.nextInt();
-			aux = aux + numero;
+			suma = suma + numero;
 		}
-		System.out.println("El resultado es: " + aux);	
+		System.out.println("El resultado es: " + suma);	
 		sc.close();
 	}
 }
