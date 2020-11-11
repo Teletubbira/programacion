@@ -16,7 +16,8 @@ public class ejercicio17 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		//comentario hecho en GitHub para entornos
+		
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.println("Introduzca el primer numero: ");
