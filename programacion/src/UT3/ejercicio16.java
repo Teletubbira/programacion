@@ -16,7 +16,8 @@ public class ejercicio16 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		//Comentario 2 para entornos
+		
 		Scanner sc= new Scanner(System.in);
 		
 		System.out.println("Introduzca el primer numero: ");
