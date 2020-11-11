@@ -38,5 +38,6 @@ public class ejercicio26 {
 			}		
 			primo = true; //reset
 		}
+		sc.close();
 	}
 }

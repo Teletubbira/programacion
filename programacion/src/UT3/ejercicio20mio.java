@@ -21,15 +21,15 @@ public class ejercicio20mio {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Introduce numeros hasta llegar a 0: ");
 		int numero = 1;
-		int aux = 0;
+		int suma = 0;
 		float contador = -1;
 		while (numero != 0) {
 			numero = sc.nextInt();
-			aux = aux + numero;
+			suma = suma + numero;
 			contador = contador + 1;
 		}
-		System.out.println("El resultado de la suma es: " + aux);	
-		System.out.println("El resultado de la media es: " + aux / contador);
+		System.out.println("El resultado de la suma es: " + suma);	
+		System.out.println("El resultado de la media es: " + suma / contador);
 		sc.close();
 	}
 }
