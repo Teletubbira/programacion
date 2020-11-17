@@ -23,6 +23,7 @@ public class ejercicio20mio {
 		int numero = 1;
 		int suma = 0;
 		float contador = -1;
+		
 		while (numero != 0) {
 			numero = sc.nextInt();
 			suma = suma + numero;

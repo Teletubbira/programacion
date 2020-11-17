@@ -1,6 +1,5 @@
 /**
- * 21. Repetir el ejercicio anterior, 
- * pero mostrar al finalizar el mayor y el menor de los números introducidos (sin contar el 0) 
+ * 
  */
 package UT3;
 
