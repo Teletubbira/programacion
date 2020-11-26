@@ -27,7 +27,10 @@ public class ejercicio66 {
 		for (int i= 0; i<numeros.length; i++) {
 			numeros [i]= sc.nextInt();
 		}
-		
+		System.out.println("Asi quedaria el array: ");
+		for (int i = 0; i <numeros.length; i++) {
+			System.out.print("[" + numeros[i] + "]");
+		}
 		for(int i= 0; i<numeros.length-1; i++) {
 			for(int j = i+1; j<numeros.length; j++) {
 				
