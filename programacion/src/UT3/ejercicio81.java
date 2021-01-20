@@ -22,14 +22,24 @@ public class ejercicio81 {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Escribe el primer numero: ");
-		int n1 = sc.nextInt();
+		int num1 = sc.nextInt();
 		System.out.println("Escribe el segundo numero: ");
-		int n2 = sc.nextInt();
+		int num2 = sc.nextInt();
 		System.out.println("Escribe el intervalo: ");
 		int inte = sc.nextInt();
 
-		int comprendido = intervalo(n1, n2);
-		int comprendido2 = intervalo(n1, n2);
+		int comprendido = intervalo(num1, num2);
+		int resultado[] = intervalo1(num1, num2);
+		int comprendido1[] = intervalo2(num1, num2, inte);
+		
+		for(int i = 0; i < resultado.length; i++) {
+			System.out.println(resultado[i]);
+		}
+		
+		System.out.println("Comprendido");
+		for(int i = 0; i < comprendido1.length; i++) {
+			System.out.println(comprendido1[i]);
+		}
 	}
 
 	private static int intervalo(int num1, int num2) {
@@ -46,15 +56,33 @@ public class ejercicio81 {
 		return num1;
 
 	}
-	
-	private static int intervalo1(int num1, int num2, int inter) {
+	// 81b
+	private static int[] intervalo1(int num1, int num2) {
 
-		int resultado = num1;
+		int array1[] = new int[num2 - num1 + 1];
 		
-		while (resultado >= num1 && resultado <= num2) {
-			System.out.println(resultado);
-			resultado = resultado + inter;
+		for (int i = num1, j = 0; i <= num2; i++, j++) {
+			array1[j] = i;
 		}
-		return num1;
+		return array1;
 }
+	private static int[] intervalo2(int num1, int num2, int inte) {
+		
+		int array[] = new int[(num2 - num1) / inte +1];
+		int contador = 0;
+		for (int i = num1; i <= num2; i = i + inte) {
+			array[contador] = i;
+		}
+		return array;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
