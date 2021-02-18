@@ -27,7 +27,7 @@ class ComplexTest {
 		Complex sustraendo = new Complex(10, 30);
 		Complex resultado = minuendo.restar(sustraendo);
 		
-		//caso limite
+		//caso con decimal
 		Complex minuendo2 = new Complex (2, 5);
 		Complex sustraendo2 = new Complex (0.7, 1.8);
 		Complex obtenido = minuendo2.restar(sustraendo2);
@@ -35,7 +35,7 @@ class ComplexTest {
 		assertEquals(resultado.getReal(), 20);
 		assertEquals(resultado.getImag(), -20);
 		
-		//caso limite
+		//caso con decimal
 		assertEquals(obtenido.getReal(), 1.3);
 		assertEquals(obtenido.getImag(), 3.2);
 	}
