@@ -20,15 +20,24 @@ class ComplexTest {
 	}
 
 	@Test
-	@DisplayName(value = "Resta de complejos")
+	@DisplayName(value = "Resta de complejos y resta con numeros negativos")
 	void testRestar() {
 
 		Complex minuendo = new Complex(30, 10);
 		Complex sustraendo = new Complex(10, 30);
 		Complex resultado = minuendo.restar(sustraendo);
-
+		
+		//caso limite
+		Complex minuendo2 = new Complex (2, 5);
+		Complex sustraendo2 = new Complex (0.7, 1.8);
+		Complex obtenido = minuendo2.restar(sustraendo2);
+				
 		assertEquals(resultado.getReal(), 20);
 		assertEquals(resultado.getImag(), -20);
+		
+		//caso limite
+		assertEquals(obtenido.getReal(), 1.3);
+		assertEquals(obtenido.getImag(), 3.2);
 	}
 
 	@Test
