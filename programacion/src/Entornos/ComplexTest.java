@@ -31,6 +31,11 @@ class ComplexTest {
 		Complex minuendo2 = new Complex (2, 5);
 		Complex sustraendo2 = new Complex (0.7, 1.8);
 		Complex obtenido = minuendo2.restar(sustraendo2);
+		
+		//caso que de 0
+		Complex minuendo3 = new Complex (3, 1);
+		Complex sustraendo3 = new Complex (3, 1);
+		Complex obtenido3 = minuendo3.restar(sustraendo3);
 				
 		assertEquals(resultado.getReal(), 20);
 		assertEquals(resultado.getImag(), -20);
@@ -38,6 +43,10 @@ class ComplexTest {
 		//caso con decimal
 		assertEquals(obtenido.getReal(), 1.3);
 		assertEquals(obtenido.getImag(), 3.2);
+		
+		//caso que de 0
+		assertEquals(obtenido3.getReal(), 0);
+		assertEquals(obtenido3.getImag(), 0);
 	}
 
 	@Test
